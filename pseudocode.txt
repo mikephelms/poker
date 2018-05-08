@@ -1,0 +1,57 @@
+call evaluatePokerHand(hand). hand = 2 dimensional array
+
+sort hand array
+
+create a 2d array that has 14 rows for card values 1-14. the second d represents
+how many cards of that value exist in hand
+
+var cardCountArr = [
+  [1, 0],
+  [2, 0],
+  [3, 0],
+  [4, 0],
+  [5, 0],
+  [6, 0],
+  [7, 0],
+  [8, 0],
+  [9, 0],
+  [10, 0],
+  [11, 0],
+  [12, 0],
+  [13, 0],
+  [14, 0],
+];
+
+loop through hand (for in) to add counts to cardCountArr
+  if ace then +=1 to cardCountArr[0][0] and [13][0]  //account for ability to be a 1 or 14
+
+CHECK for a flush //done using hand array
+  flush = true
+
+CHECK for a straight
+  Are cardCountArr[13][1] thru cardCountArr[9][1] !=0 ?
+   then straight==true
+   straightHighCard = 14
+   break
+ Are cardCountArr[12][1] thru cardCountArr[8][1] !=0 ?
+  then straight==true
+  break
+.
+.
+.
+Are cardCountArr[4][1] thru cardCountArr[0][1] !=0 ?
+ then straight==true
+ break
+
+CHECK for 4 of a kind
+ if any cardCountArr value >= 4
+  then fourOfKind == true
+  fourOfKindValue == [0]
+
+
+if flush = true && straight == true && straightHighCard == true
+  RETURN royal flush
+if flush = true && straight == true
+  RETURN flush
+if flush = true && straight == true && straightHighCard == true
+  RETURN royal FLUSH

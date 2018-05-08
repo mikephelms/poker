@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hand Picker</title>
+  <link rel="stylesheet" href="css/handpicker.css">
+
+  <script type="text/javascript">
+
+  </script>
+</head>
+
+<body>
+<header>
+<h1>Evaluate Poker Hands</h1>
+</header>
+
+<div class="wrapper">
+
+  <h2>Select Cards</h2>
+  <div id="buttonsDiv">
+		<button id="02h" class="card-btn hearts" onclick="cardClick(this.id)">2 &hearts;</button>
+    <button id="03h" class="card-btn hearts" onclick="cardClick(this.id)">3 &hearts;</button>
+    <button id="04h" class="card-btn hearts" onclick="cardClick(this.id)">4 &hearts;</button>
+    <button id="05h" class="card-btn hearts" onclick="cardClick(this.id)">5 &hearts;</button>
+    <button id="06h" class="card-btn hearts" onclick="cardClick(this.id)">6 &hearts;</button>
+    <button id="07h" class="card-btn hearts" onclick="cardClick(this.id)">7 &hearts;</button>
+    <button id="08h" class="card-btn hearts" onclick="cardClick(this.id)">8 &hearts;</button>
+    <button id="09h" class="card-btn hearts" onclick="cardClick(this.id)">9 &hearts;</button>
+    <button id="10h" class="card-btn hearts" onclick="cardClick(this.id)">10 &hearts;</button>
+    <button id="11h" class="card-btn hearts" onclick="cardClick(this.id)">J &hearts;</button>
+    <button id="12h" class="card-btn hearts" onclick="cardClick(this.id)">Q &hearts;</button>
+    <button id="13h" class="card-btn hearts" onclick="cardClick(this.id)">K &hearts;</button>
+    <button id="14h" class="card-btn hearts" onclick="cardClick(this.id)">A &hearts;</button>
+    <br>
+    <button id="02c" class="card-btn clubs" onclick="cardClick(this.id)">2 &clubs;</button>
+    <button id="03c" class="card-btn clubs" onclick="cardClick(this.id)">3 &clubs;</button>
+    <button id="04c" class="card-btn clubs" onclick="cardClick(this.id)">4 &clubs;</button>
+    <button id="05c" class="card-btn clubs" onclick="cardClick(this.id)">5 &clubs;</button>
+    <button id="06c" class="card-btn clubs" onclick="cardClick(this.id)">6 &clubs;</button>
+    <button id="07c" class="card-btn clubs" onclick="cardClick(this.id)">7 &clubs;</button>
+    <button id="08c" class="card-btn clubs" onclick="cardClick(this.id)">8 &clubs;</button>
+    <button id="09c" class="card-btn clubs" onclick="cardClick(this.id)">9 &clubs;</button>
+    <button id="10c" class="card-btn clubs" onclick="cardClick(this.id)">10 &clubs;</button>
+    <button id="11c" class="card-btn clubs" onclick="cardClick(this.id)">J &clubs;</button>
+    <button id="12c" class="card-btn clubs" onclick="cardClick(this.id)">Q &clubs;</button>
+    <button id="13c" class="card-btn clubs" onclick="cardClick(this.id)">K &clubs;</button>
+    <button id="14c" class="card-btn clubs" onclick="cardClick(this.id)">A &clubs;</button>
+    <br>
+    <button id="02d" class="card-btn diams" onclick="cardClick(this.id)">2 &diams;</button>
+    <button id="03d" class="card-btn diams" onclick="cardClick(this.id)">3 &diams;</button>
+    <button id="04d" class="card-btn diams" onclick="cardClick(this.id)">4 &diams;</button>
+    <button id="05d" class="card-btn diams" onclick="cardClick(this.id)">5 &diams;</button>
+    <button id="06d" class="card-btn diams" onclick="cardClick(this.id)">6 &diams;</button>
+    <button id="07d" class="card-btn diams" onclick="cardClick(this.id)">7 &diams;</button>
+    <button id="08d" class="card-btn diams" onclick="cardClick(this.id)">8 &diams;</button>
+    <button id="09d" class="card-btn diams" onclick="cardClick(this.id)">9 &diams;</button>
+    <button id="10d" class="card-btn diams" onclick="cardClick(this.id)">10 &diams;</button>
+    <button id="11d" class="card-btn diams" onclick="cardClick(this.id)">J &diams;</button>
+    <button id="12d" class="card-btn diams" onclick="cardClick(this.id)">Q &diams;</button>
+    <button id="13d" class="card-btn diams" onclick="cardClick(this.id)">K &diams;</button>
+    <button id="14d" class="card-btn diams" onclick="cardClick(this.id)">A &diams;</button>
+    <br>
+    <button id="02s" class="card-btn spades" onclick="cardClick(this.id)">2 &spades;</button>
+    <button id="03s" class="card-btn spades" onclick="cardClick(this.id)">3 &spades;</button>
+    <button id="04s" class="card-btn spades" onclick="cardClick(this.id)">4 &spades;</button>
+    <button id="05s" class="card-btn spades" onclick="cardClick(this.id)">5 &spades;</button>
+    <button id="06s" class="card-btn spades" onclick="cardClick(this.id)">6 &spades;</button>
+    <button id="07s" class="card-btn spades" onclick="cardClick(this.id)">7 &spades;</button>
+    <button id="08s" class="card-btn spades" onclick="cardClick(this.id)">8 &spades;</button>
+    <button id="09s" class="card-btn spades" onclick="cardClick(this.id)">9 &spades;</button>
+    <button id="10s" class="card-btn spades" onclick="cardClick(this.id)">10 &spades;</button>
+    <button id="11s" class="card-btn spades" onclick="cardClick(this.id)">J &spades;</button>
+    <button id="12s" class="card-btn spades" onclick="cardClick(this.id)">Q &spades;</button>
+    <button id="13s" class="card-btn spades" onclick="cardClick(this.id)">K &spades;</button>
+    <button id="14s" class="card-btn spades" onclick="cardClick(this.id)">A &spades;</button>
+    <br>
+    <button id="00j1" class="card-btn jokers" onclick="cardClick(this.id)">Jkr</button>
+    <button id="00j2" class="card-btn jokers" onclick="cardClick(this.id)">Jkr</button>
+  </div>
+  <h2>Selected Hand</h2>
+  <div id="handDiv" class="indent">
+
+  </div>
+  <button id="resetBtn" class="actionBtn" onclick="discardHand()" style="display: none;">Reset &orarr;</button>
+
+  <div id="pokerDiv" class="indent">
+
+  </div>
+
+  <h2>Random Hand</h2>
+  <div id="randomHandControls" class="">
+    <button id="dealHand" class="actionBtn" onclick="dealRandomHand()" style="">Deal Random Hand</button>
+  </div>
+  <div id="randomHand" class="indent">
+
+  </div>
+
+
+</div>
+
+
+</div>
+
+<script src="js/cards.js"></script>
+<script src="js/handpicker.js"></script>
+
+</body>
+
+</html>

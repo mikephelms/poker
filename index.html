@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cards</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="borderDiv" id="deckControls" style="width: 300px; float: left;">
+	<div class="borderDiv" id="newDeck">
+		<button onclick="openNewDeck();">Open a New Deck</button> <br />
+		<input type="checkbox" id="jokers" class="largerCheckbox"> Jokers?</input>
+	</div>
+	
+	<div class="borderDiv" id="shuffle" style="display: none;">
+		<button onclick="cut();">Cut the Deck</button> &nbsp;
+		<button onclick="overhand();">Overhand Shuffle</button> &nbsp;
+		<button onclick="riffle();">Riffle Shuffle</button> &nbsp;
+		<button onclick="complete();">Complete Shuffle</button>
+		
+		
+	</div>
+	
+	<div class="borderDiv" id="handContainer" style="display: block;">
+		<h2>Player Hand:</h2>
+		<button onclick="deal1();">Deal 1 Card</button>
+		<hr />
+		<div id="hand" style="">
+			
+			
+		</div>
+		<div id="pokerHand" style="">
+			
+			
+		</div>
+	</div>
+	
+	<div class="borderDiv" id="discardContainer" style="display: block;">
+		<h2>Discard Pile:</h2>
+		<button onclick="discard1();">Discard 1 Card</button>
+		<hr />
+		<div id="discard" style="">
+			
+			
+		</div>
+	</div>
+	
+	<div class="borderDiv" id="stats" style="display: block;">
+		<h2>History:</h2><hr />
+		<div id="shuffleHistory" style="">
+			
+		</div>
+	</div>
+	
+	
+	
+</div>
+
+<div class="borderDiv" id="deckListContainer" style="width: 150px; float: left; display: none;">
+<h2>The Deck</h2>
+<hr>
+<div id="deckList" style="">
+
+</div>
+</div>
+
+
+<div class="borderDiv" id="leftHandContainer" style="width: 150px; float: left; display: none;">
+<h2>Left Hand</h2>
+<hr>
+
+<div id="leftHand" style="">
+
+</div>
+</div>
+
+
+<div class="borderDiv" id="rightHandContainer" style="width: 150px; float: left; display: none;">
+<h2>Right Hand</h2>
+<hr>
+
+<div id="rightHand" style="">
+
+</div>
+</div>
+
+
+<script src="js/cards.js"></script>
+<script src="js/visualizeDeck.js"></script>
+
+</body>
+
+</html>
